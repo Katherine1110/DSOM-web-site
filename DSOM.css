@@ -81,15 +81,16 @@ footer {
 }
 .intro {
     display: flex;
+    justify-content: center;
     margin-right: auto;
     margin-left: auto;
     background-color: #1A1919;
 }
 
-.logo  {
+/* .logo  {
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
 .content .title {
     margin-top: 0;
@@ -108,7 +109,6 @@ footer {
 }
 
 .content, .contacts {
-    width: 800px;
     margin-left: auto;
     margin-right: auto;
     padding: 80px;
