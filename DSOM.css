@@ -73,11 +73,12 @@ footer {
     font-size: 20px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+}
 
+.main-content {
     background-image: url(images/lunarrock_s_overexposure.png);
     background-size: 100%;
 }
-
 .intro {
     display: flex;
     margin-right: auto;
