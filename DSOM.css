@@ -67,46 +67,132 @@ footer {
     align-items: center;
 }
  */
+ html {
+    box-sizing: border-box;
+}
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+}
+
+:root {
+   --main-text-color: #1A1919;
+   --caption-text-color: #919191;
+}
+
 
  body {
     font-family: Roboto, sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
-.main-content {
-    background-image: url(images/lunarrock_s_overexposure.png);
-    background-size: 100%;
+
+/* header */
+
+.logo {
+    max-width: 100%;
+    height: auto;
 }
+
 .intro {
     display: flex;
     justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: #1A1919;
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+    background-color: var(--main-text-color);
 }
 
-/* .logo  {
+/* main content */
+.main-content {
+    background-image: url(./images/lunarrock_s_overexposure.png);
+}
+
+.content,
+.contacts {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
+}
+
+.preview {
+    width: 60%;
+}
+
+
+
+/* .content, .contacts {
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    padding: 80px;
+
+    text-align: center;
 } */
 
-.content .title {
+.content .title,
+.contacts .title {
     margin-top: 0;
     margin-bottom: 30px;
 }
 
+ /* .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 50px
+    margin-right: 50px;
+ } */
+
+
+
 .content .preview {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 30px;
     text-align: left;
 }
 
-.contacts .title {
+
+
+
+.contacts > a {
+    text-decoration: none;
+    color: black;
+}
+
+.contacts > a:hover {
+    color: #919191;
+}
+
+
+.text {
     margin-top: 0;
     margin-bottom: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    color: var(--caption-text-color);
 }
+
+.footer {
+    background-color:  var(--main-text-color);
+}
+/* 
+
+.contacts, 
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
 
 .content, .contacts {
     margin-left: auto;
@@ -139,7 +225,7 @@ footer {
     text-align: center;
     padding-top: 25px;
     padding-bottom: 25px;
-}
+}  */
 /* .title,
 .preview,
 .subtitle,
