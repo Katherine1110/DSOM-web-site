@@ -1,4 +1,4 @@
-* {
+/* * {
     box-sizing: border-box;
   }
   
@@ -66,9 +66,79 @@ footer {
     justify-content: center;
     align-items: center;
 }
+ */
 
+ body {
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 
+    background-image: url(images/lunarrock_s_overexposure.png);
+    background-size: 100%;
+}
 
+.intro {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #1A1919;
+}
+
+.logo  {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content .title {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.content .preview {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.contacts .title {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.content, .contacts {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 80px;
+    text-align: center;
+}
+
+.contacts .title {
+    margin-bottom: 30px;
+}
+
+.contacts > a {
+    text-decoration: none;
+    color: black;
+}
+
+.contacts > a:hover {
+    color: #919191;
+}
+
+.footer {
+    background-color: #1A1919;
+}
+
+.footer .text {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #919191;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
 /* .title,
 .preview,
 .subtitle,
